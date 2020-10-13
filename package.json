@@ -1,0 +1,29 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "tsc && jest --setupFiles dotenv/config",
+    "start": "tsc && node dist/app.js",
+    "debug": "tsc && node --inspect=9229 dist/app.js --debug",
+    "initdb": "tsc && node dist/app.js -initdb"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/express": "^4.17.2",
+    "jest": "^25.5.4",
+    "tslint": "^6.0.0",
+    "typescript": "^3.8.3"
+  },
+  "dependencies": {
+    "@types/jest": "^25.2.1",
+    "axios": "^0.19.2",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "pg": "^7.18.2",
+    "websocket": "^1.0.32",
+    "winston": "^3.2.1"
+  }
+}
